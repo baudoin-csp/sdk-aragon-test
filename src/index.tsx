@@ -15,7 +15,7 @@ export const IPFS_API_KEY: string = "b477RhECf8s8sdM7XrkLBs2wHc4kCMwpbcFC55Kt";
 // OPTION A: The simplest ContextParams you can have is this. This uses our default values and should work perfectly within your product.
 const minimalContextParams: ContextParams = {
   // Choose the network you want to use. You can use "goerli" (Ethereum) or "maticmum" (Polygon) for testing, or "mainnet" (Ethereum) and "polygon" (Polygon) for mainnet.
-  network: SupportedNetwork.GOERLI,
+  network: SupportedNetwork.MAINNET,
   web3Providers: "https://eth.llamarpc.com",
   // This is the signer account who will be signing transactions for your app. You can use also use a specific account where you have funds, through passing it `new Wallet("your-wallets-private-key")` or pass it in dynamically when someone connects their wallet to your dApp.
   signer: Wallet.createRandom(),
